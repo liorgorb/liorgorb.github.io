@@ -101,6 +101,13 @@
             document.documentElement.className = Telegram.WebApp.colorScheme;
         });
 
+        function logDebugMessage() {
+            console.debug("Debug log: Timer is running!");
+        }
+
+        // Set an interval to call the function every 5 seconds (5000 milliseconds)
+        setInterval(logDebugMessage, 5000);
+
         // Show main button
         Telegram.WebApp.MainButton.setParams({
             text: 'Main Button'
